@@ -1,0 +1,5 @@
+@*
+* Renders breadcrumbs, given a list of table of contents sections
+*@
+@(hierarchy: List[play.doc.Toc])
+@for(header <- hierarchy) {<span>@header.title</span>}
